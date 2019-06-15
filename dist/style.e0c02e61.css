@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.content-box {
+  margin: 1%;
+}
+
+#landing {
+  height: 95vh;
+  background: #144587;
+  border: 5px outset #111;
+}
+#landing h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #bc881f;
+  font-size: 10rem;
+}
+
+/*# sourceMappingURL=/style.e0c02e61.css.map */
