@@ -13,11 +13,27 @@
 
 #landing {
    height: 95vh;
-   background: $brand1;
-   border: 5px outset $black;
+   background: $brandBlue;
+   border: 5px outset $brandYellow;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: $font1;
    h1 {
-      font-family: $font1;
-      color: $brand2;
-      font-size: 10rem;
+      color: $brandYellow;
+      font-size: 12rem;
+      font-weight: 900;
+      line-height: 0.75em;
+      border-bottom: 3px solid $black;
+      padding-bottom: 30px;
    }
+   p {
+      padding-top: 30px;
+      font-size: 2.5rem;
+      font-weight: 700;
+   }
+}
+
+#center {
+   width: 50%;
 }
