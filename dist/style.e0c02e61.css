@@ -5,14 +5,18 @@
   font-size: 10px;
 }
 
+body {
+  background: #111;
+}
+
 .content-box {
-  margin: 1%;
+  margin: 0.5%;
 }
 
 #landing {
   height: 95vh;
   background: #144587;
-  border: 5px outset #bc881f;
+  border: 8px outset #bc881f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,20 +24,48 @@
 }
 #landing h1 {
   color: #bc881f;
-  font-size: 12rem;
+  font-size: 15rem;
   font-weight: 900;
   line-height: 0.75em;
-  border-bottom: 3px solid #111;
+  border-bottom: 5px outset #111;
   padding-bottom: 30px;
 }
 #landing p {
   padding-top: 30px;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #111;
+}
+#landing #center {
+  width: 50%;
+  text-align: center;
 }
 
-#center {
-  width: 50%;
+#header a:link, #header a:visited {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2.8rem;
+}
+#header a:hover {
+  color: #e66210;
+}
+#header #jumps {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+#header #info {
+  line-height: 4em;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+#header #info img {
+  padding-right: 8px;
+  position: relative;
+  top: 5px;
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */

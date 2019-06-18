@@ -7,33 +7,67 @@
    font-size: 10px;
 }
 
+body { 
+   background: $black;
+}
+
 .content-box {
-   margin: 1%;
+   margin: 0.5%;
 }
 
 #landing {
    height: 95vh;
    background: $brandBlue;
-   border: 5px outset $brandYellow;
+   border: 8px outset $brandYellow;
    display: flex;
    justify-content: center;
    align-items: center;
    font-family: $font1;
    h1 {
       color: $brandYellow;
-      font-size: 12rem;
+      font-size: 15rem;
       font-weight: 900;
       line-height: 0.75em;
-      border-bottom: 3px solid $black;
+      border-bottom: 5px outset $black;
       padding-bottom: 30px;
    }
    p {
       padding-top: 30px;
-      font-size: 2.5rem;
-      font-weight: 700;
+      font-size: 2.7rem;
+      font-weight: 800;
+      color: $black;
+   }
+   #center {
+   width: 50%;
+   text-align: center;
    }
 }
 
-#center {
-   width: 50%;
+#header {
+      a:link, a:visited {
+      color: #fff;
+      font-weight: 300;
+      text-decoration: none;
+      padding: 20px;
+      font-size: 2.8rem;
+   }
+   a:hover {
+      color: $accentOrange;
+   }
+   #jumps {
+   position: absolute;
+   top: 5%;
+   left: 2%;
+   }
+   #info {
+      line-height: 4em;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      img {
+         padding-right: 8px;
+         position: relative;
+         top: 5px;
+      }
+   }
 }
