@@ -27,8 +27,8 @@ body {
   font-size: 15rem;
   font-weight: 900;
   line-height: 0.75em;
-  border-bottom: 5px outset #111;
-  padding-bottom: 30px;
+  border-bottom: 5px outset #fff;
+  padding-bottom: 40px;
 }
 #landing p {
   padding-top: 30px;
@@ -43,7 +43,7 @@ body {
 
 #header a:link, #header a:visited {
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
   text-decoration: none;
   padding: 20px;
   font-size: 2.8rem;
