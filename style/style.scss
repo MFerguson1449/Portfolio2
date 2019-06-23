@@ -7,7 +7,7 @@
 }
 
 body { 
-   background: $black;
+   background: #fff;
    font-size: 10px;
    font-family: $font1;
 }
@@ -35,7 +35,7 @@ body {
       padding-top: 30px;
       font-size: 1.5rem;
       font-weight: 800;
-      color: $black;
+      color: #fff;
    }
    #center {
    width: 50%;
@@ -74,7 +74,8 @@ body {
 
 #skills {
    height: 50vh;
-   color: #fff;
+   color: $black;
+   font-weight: 600;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -97,7 +98,24 @@ body {
       flex-direction: row;
       justify-content: space-evenly;
       h2 {
-         color: $accentOrange;
+         color: $brandYellow;
+         font-weight: 900;
+      }
+      #front-end h2{
+         border-left: $accentGreen 4px solid;
+         padding-left: 10px;
+      }
+      #source-control h2{
+         border-left: $accentBlue 4px solid;
+         padding-left: 10px;
+      }
+      #uiux h2{
+         border-left: $accentPurple 4px solid;
+         padding-left: 10px;
+      }
+      #soft-skills h2{
+         border-left: $accentOrange 4px solid;
+         padding-left: 10px;
       }
    }
 }
