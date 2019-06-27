@@ -124,7 +124,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#projects #projects-header {
+#projects h1 {
   color: #fff;
   font-size: 3.4rem;
 }
@@ -134,23 +134,49 @@ body {
   border: 5px dashed #59E259;
 }
 #projects .project-box {
-  border: 5px dashed red;
+  position: relative;
+  width: 10vw;
+  width: 100%;
+}
+#projects .project-box h2 {
+  color: white;
+  font-size: 1.8rem;
+  position: absolute;
+  left: 1%;
+  bottom: 1%;
+  transition: ease 0.8s;
 }
 #projects .project-overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: 0.7s ease;
   background: rgba(66, 66, 66, 0.7);
   color: black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+#projects .project-overlay .project-blurb {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+#projects .project-overlay .project-blurb p {
+  transform: translateY(30%);
 }
 #projects .project-box:hover .project-overlay {
   opacity: 1;
+  transition: ease 0.7s;
+}
+#projects .project-box:hover h2 {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */
