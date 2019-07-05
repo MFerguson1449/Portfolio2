@@ -5,36 +5,52 @@
 }
 
 body {
-  background: #111;
+  background: #fff;
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Staatliches", cursive;
 }
 
 .content-box {
-  margin: 0%;
+  margin: 0.8%;
 }
 
 #landing {
   height: 95vh;
   background: #144587;
-  border: 3px solid #bc881f;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
-#landing h1 {
-  color: #bc881f;
-  font-size: 10rem;
+#landing #name {
+  position: relative;
+  transform: translateX(-8%);
+  color: #111;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 8rem;
   font-weight: 900;
-  line-height: 0.75em;
-  border-bottom: 7px outset #111;
-  padding-bottom: 40px;
+  line-height: 0.85em;
+  letter-spacing: 0.01rem;
+  -webkit-text-stroke: 0.1px #444;
+  text-align: left;
+}
+#landing #namebox {
+  border-bottom: 15px solid #bc881f;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+#landing #namebox img {
+  height: auto;
+  width: 35%;
 }
 #landing p {
-  padding-top: 30px;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #fff;
+  padding-top: 20px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #111;
+  -webkit-text-stroke: 0.2px #222;
 }
 #landing #center {
   width: 50%;
@@ -76,8 +92,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(-3%);
-  background: #fff;
+  background: #f1f1f1;
 }
 #skills #skills-header {
   font-size: 3.4rem;
@@ -141,7 +156,7 @@ body {
   width: 30vw;
   height: 20vw;
   margin: -1%;
-  border: 10px outset #bc881f;
+  border: 10px inset #bc881f;
   background-color: #144587;
 }
 #projects .project-box h2 {
