@@ -22,39 +22,35 @@ body {
   align-items: center;
   color: #fff;
 }
-#landing #name {
-  position: relative;
-  transform: translateX(-8%);
-  color: #111;
+#landing #center {
+  width: 60%;
+  text-align: center;
+}
+#landing #namebox {
+  border: 5px dashed #59E259;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+#landing #namebox #name {
+  color: #fff;
   font-family: "Nanum Gothic", sans-serif;
   font-size: 8rem;
   font-weight: 900;
   line-height: 0.85em;
   letter-spacing: 0.01rem;
-  -webkit-text-stroke: 0.1px #444;
+  -webkit-text-stroke: 3px #111;
   text-align: left;
 }
-#landing #namebox {
-  border-bottom: 15px solid #bc881f;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: flex-end;
-}
 #landing #namebox img {
-  height: auto;
-  width: 35%;
+  height: 95%;
 }
-#landing p {
-  padding-top: 20px;
+#landing #personalBlurb {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #111;
+  color: #bc881f;
   -webkit-text-stroke: 0.2px #222;
-}
-#landing #center {
-  width: 50%;
-  text-align: center;
 }
 
 #header a:link, #header a:visited {

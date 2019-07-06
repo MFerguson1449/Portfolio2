@@ -23,40 +23,38 @@ body {
    justify-content: center;
    align-items: center;
    color: #fff;
-   #name {
-      position: relative;
-      transform: translateX(-8%);
-      color: $black;
-      font-family: $font1;
-      font-size: 8rem;
-      font-weight: 900;
-      line-height: 0.85em;
-      letter-spacing: 0.01rem;
-      -webkit-text-stroke: 0.10px #444;
-      text-align: left;
+
+   #center {
+   width: 60%;
+   text-align: center;
    }
+
    #namebox {
-      border-bottom: 15px solid $brandYellow;
+      border: $testBorder1;
+      height: 300px;
       display: flex;
-      flex-flow: row nowrap;
-      justify-content: center;
       align-items: flex-end;
+      justify-content: space-around;
+      #name {
+         color: #fff;
+         font-family: $font1;
+         font-size: 8rem;
+         font-weight: 900;
+         line-height: 0.85em;
+         letter-spacing: 0.01rem;
+         -webkit-text-stroke: 3px #111;
+         text-align: left;
+      }
       img {
-         height: auto;
-         width: 35%;
+         height: 95%;
       }
 
    }
-   p {
-      padding-top: 20px;
+   #personalBlurb {
       font-size: 1.8rem;
       font-weight: 500;
-      color: $black;
+      color: $brandYellow;
       -webkit-text-stroke: 0.2px #222;
-   }
-   #center {
-   width: 50%;
-   text-align: center;
    }
 }
 
