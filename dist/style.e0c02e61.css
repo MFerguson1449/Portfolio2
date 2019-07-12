@@ -235,4 +235,11 @@ body {
   opacity: 0;
 }
 
+#footer {
+  color: #bc881f;
+  font-size: 1rem;
+  text-align: center;
+  margin: -0.4% 0% 0.5% 0%;
+}
+
 /*# sourceMappingURL=/style.e0c02e61.css.map */
