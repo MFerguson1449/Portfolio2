@@ -10,6 +10,7 @@ body {
    background: #fff;
    font-size: 10px;
    font-family: $font2;
+   font-weight: 400;
 }
 
 .content-box {
@@ -30,29 +31,32 @@ body {
    }
 
    #namebox {
-      border: $testBorder1;
+      width: 100%;
       height: 300px;
       display: flex;
       align-items: flex-end;
-      justify-content: space-around;
+      justify-content: center;
+      padding-bottom: 20px;
       #name {
-         color: #fff;
+         width: 70%;
+         color: #f3f3f3;
          font-family: $font1;
-         font-size: 8rem;
-         font-weight: 900;
-         line-height: 0.85em;
-         letter-spacing: 0.01rem;
-         -webkit-text-stroke: 3px #111;
+         font-size: 8.2rem;
+         font-weight: 700;
+         line-height: 0.79em;
          text-align: left;
+         #first {
+            position: relative;
+         }
       }
       img {
          height: 95%;
+         width: 19%;
       }
 
    }
    #personalBlurb {
       font-size: 1.8rem;
-      font-weight: 500;
       color: $brandYellow;
       -webkit-text-stroke: 0.2px #222;
    }
@@ -61,7 +65,7 @@ body {
 #header {
       a:link, a:visited {
       color: #fff;
-      font-weight: 700;
+      font-weight: 400;
       text-decoration: none;
       padding: 20px;
       font-size: 1.8rem;
@@ -88,7 +92,7 @@ body {
 }
 
 #skills {
-   height: 60vh;
+   height: 70vh;
    color: $black;
    font-weight: 600;
    display: flex;
@@ -97,46 +101,62 @@ body {
    align-items: center;
    background: #f1f1f1;
    #skills-header{
-      font-size: 3.4rem;
+      font-size: 3.3rem;
+      margin-top: 5%;
+      padding-bottom: 50px;
+      width: 30%;
+      text-align: center;
+      line-height: 0.8em;
+      padding-bottom: 25px;
+      font-family: $font1;
       color: $brandYellow;
+
    }
    #skills-blurb {
       text-align: center;
       width: 50%;
-      font-size: 1.3rem;
-      margin-bottom: 3%;
+      font-size: 1.5rem;
+      margin: 1% 0% 3% 0%;
+      color: $grey;
+      font-weight: 200;
    }
    #skills-group {
       font-size: 1.2rem;
       width: 60%;
+      margin-bottom: 5%;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       h2 {
-         color: $brandYellow;
-         font-weight: 900;
+         color: $black;
+         font-family: $font1;
+         font-weight: 600;
          padding-left: 10px;
+         letter-spacing: 0.01em;
+         text-align: center;
       }
       ul {
-         padding-top: 10px;
+         padding: 10px 0px 0px 40px;
+         font-size: 1.3rem;
+         font-weight: 400;
+         color: $grey;
       }
       #front-end h2{
-         border-left: $accentGreen 4px solid;
+         border-left: $accentGreen 5px solid;
       }
       #source-control h2{
-         border-left: $accentBlue 4px solid;
+         border-left: $accentBlue 5px solid;
       }
       #uiux h2{
-         border-left: $accentPurple 4px solid;
+         border-left: $accentPurple 5px solid;
       }
       #soft-skills h2{
-         border-left: $accentOrange 4px solid
+         border-left: $accentOrange 5px solid
       }
    }
 }
 
 #projects {
-   height: 80vh;
    background: $black;
    display: flex;
    justify-content: center;
@@ -144,22 +164,37 @@ body {
    flex-direction: column;
    h1 {
       color: #fff;
-      font-size: 3.4rem;
-      margin-bottom: 5%;
+      font-size: 5rem;
+      margin: 10% 0% 2% 0%;
+   }
+   #projects-bio {
+      color: $brandYellow;
+      margin-bottom: 12%;
+      font-size: 1.5rem;
+      font-weight: 400;
+      a:link {
+         color: $brandYellow;
+      }
+      a:hover {
+         color: $accentOrange;
+      }
    }
    #project-sort {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-evenly;
-      width: 80%;
+      width: 90%;
+      margin-bottom: 25%;
    }
    .project-box {
       position: relative;
       width: 30vw;
       height: 20vw;
-      margin: -1%;
-      border: 10px inset $brandYellow;
+      margin: -8%;
+      border: 10px solid #fff;
       background-color: $brandBlue;
+
+      transition: .7s ease;
       h2 {
          color: white;
          font-size: 1.8rem;
@@ -204,6 +239,7 @@ body {
       opacity: 1;
       transition: ease 0.7s;
    }
+
    .project-box:hover h2 {
       opacity: 0;
    }
