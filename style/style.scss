@@ -1,5 +1,8 @@
 @import '_variables.scss';
 
+html {
+   scroll-behavior: smooth;
+}
 * {
    margin: 0px;
    padding: 0px;
@@ -14,6 +17,7 @@ body {
 }
 
 .content-box {
+   width: 99.2%;
    margin: 0.8%;
 }
 
@@ -24,14 +28,12 @@ body {
    justify-content: center;
    align-items: center;
    color: #fff;
-
    #center {
    width: 60%;
    text-align: center;
    }
 
    #namebox {
-      width: 100%;
       height: 300px;
       display: flex;
       align-items: flex-end;
@@ -41,7 +43,7 @@ body {
          width: 70%;
          color: #f3f3f3;
          font-family: $font1;
-         font-size: 8.2rem;
+         font-size: 13em;
          font-weight: 700;
          line-height: 0.79em;
          text-align: left;
@@ -56,19 +58,19 @@ body {
 
    }
    #personalBlurb {
-      font-size: 1.8rem;
+      font-size: 1.5vw;
       color: $brandYellow;
       -webkit-text-stroke: 0.2px #222;
    }
 }
 
 #header {
-      a:link, a:visited {
-      color: #fff;
-      font-weight: 400;
-      text-decoration: none;
-      padding: 20px;
-      font-size: 1.8rem;
+   a:link, a:visited {
+   color: #fff;
+   font-weight: 400;
+   text-decoration: none;
+   padding: 20px;
+   font-size: 2.8em;
    }
    a:hover {
       color: $accentOrange;
@@ -101,7 +103,7 @@ body {
    align-items: center;
    background: #f1f1f1;
    #skills-header{
-      font-size: 3.3rem;
+      font-size: 6em;
       margin-top: 5%;
       padding-bottom: 50px;
       width: 30%;
@@ -115,13 +117,13 @@ body {
    #skills-blurb {
       text-align: center;
       width: 50%;
-      font-size: 1.5rem;
+      font-size: 2.5em;
       margin: 1% 0% 3% 0%;
       color: $grey;
       font-weight: 200;
    }
    #skills-group {
-      font-size: 1.2rem;
+      font-size: 2em;
       width: 60%;
       margin-bottom: 5%;
       display: flex;
@@ -137,7 +139,7 @@ body {
       }
       ul {
          padding: 10px 0px 0px 40px;
-         font-size: 1.3rem;
+         font-size: 1em;
          font-weight: 400;
          color: $grey;
       }

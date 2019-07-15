@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -12,6 +16,7 @@ body {
 }
 
 .content-box {
+  width: 99.2%;
   margin: 0.8%;
 }
 
@@ -28,7 +33,6 @@ body {
   text-align: center;
 }
 #landing #namebox {
-  width: 100%;
   height: 300px;
   display: flex;
   align-items: flex-end;
@@ -39,7 +43,7 @@ body {
   width: 70%;
   color: #f3f3f3;
   font-family: "Montserrat", sans-serif;
-  font-size: 8.2rem;
+  font-size: 13em;
   font-weight: 700;
   line-height: 0.79em;
   text-align: left;
@@ -52,7 +56,7 @@ body {
   width: 19%;
 }
 #landing #personalBlurb {
-  font-size: 1.8rem;
+  font-size: 1.5vw;
   color: #bc881f;
   -webkit-text-stroke: 0.2px #222;
 }
@@ -62,7 +66,7 @@ body {
   font-weight: 400;
   text-decoration: none;
   padding: 20px;
-  font-size: 1.8rem;
+  font-size: 2.8em;
 }
 #header a:hover {
   color: #e66210;
@@ -95,7 +99,7 @@ body {
   background: #f1f1f1;
 }
 #skills #skills-header {
-  font-size: 3.3rem;
+  font-size: 6em;
   margin-top: 5%;
   padding-bottom: 50px;
   width: 30%;
@@ -108,13 +112,13 @@ body {
 #skills #skills-blurb {
   text-align: center;
   width: 50%;
-  font-size: 1.5rem;
+  font-size: 2.5em;
   margin: 1% 0% 3% 0%;
   color: #9197a1;
   font-weight: 200;
 }
 #skills #skills-group {
-  font-size: 1.2rem;
+  font-size: 2em;
   width: 60%;
   margin-bottom: 5%;
   display: flex;
@@ -131,7 +135,7 @@ body {
 }
 #skills #skills-group ul {
   padding: 10px 0px 0px 40px;
-  font-size: 1.3rem;
+  font-size: 1em;
   font-weight: 400;
   color: #9197a1;
 }
