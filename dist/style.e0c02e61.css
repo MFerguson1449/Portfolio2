@@ -11,26 +11,46 @@ html {
 body {
   background: #fff;
   font-size: 10px;
-  font-family: "Staatliches", cursive;
+  font-family: "Literata", serif;
   font-weight: 400;
 }
 
-.content-box {
-  width: 99.2%;
-  margin: 0.8%;
+#header {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  background: #111;
+  padding: 5px;
+  text-align: center;
+}
+#header a:link, #header a:visited {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 2.3em;
+  font-family: "Montserrat", sans-serif;
+}
+#header a:hover {
+  color: #e66210;
+}
+#header #info img {
+  padding-right: 8px;
+  position: relative;
+  top: 5px;
 }
 
 #landing {
-  height: 95vh;
-  background: #144587;
+  padding-top: 150px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
 }
 #landing #center {
   width: 60%;
   text-align: center;
+  transform: translateY(-10%);
 }
 #landing #namebox {
   height: 300px;
@@ -41,137 +61,113 @@ body {
 }
 #landing #namebox #name {
   width: 70%;
-  color: #f3f3f3;
+  color: #111;
   font-family: "Montserrat", sans-serif;
-  font-size: 13em;
-  font-weight: 700;
+  font-size: 7vw;
+  font-weight: 300;
   line-height: 0.79em;
   text-align: left;
+  padding-left: 15px;
 }
 #landing #namebox #name #first {
   position: relative;
 }
-#landing #namebox img {
-  height: 95%;
-  width: 19%;
+#landing #namebox #logo {
+  width: 13vw;
+  height: auto;
+  display: inline-block;
+  background: #111;
+  padding: 3.5% 1.5%;
 }
 #landing #personalBlurb {
   font-size: 1.5vw;
-  color: #bc881f;
+  color: #555;
   -webkit-text-stroke: 0.2px #222;
-}
-
-#header a:link, #header a:visited {
-  color: #fff;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 20px;
-  font-size: 2.8em;
-}
-#header a:hover {
-  color: #e66210;
-}
-#header #jumps {
-  position: absolute;
-  top: 5%;
-  left: 2%;
-}
-#header #info {
-  line-height: 4em;
-  position: absolute;
-  top: 5%;
-  right: 5%;
-}
-#header #info img {
-  padding-right: 8px;
-  position: relative;
-  top: 5px;
+  border-top: #111 6px solid;
+  padding-top: 20px;
+  font-weight: 100;
+  font-family: "Staatliches", cursive;
 }
 
 #skills {
-  height: 70vh;
+  padding-top: 100px;
   color: #111;
   font-weight: 600;
   display: flex;
+  background: #fafafa;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f1f1f1;
 }
 #skills #skills-header {
-  font-size: 6em;
-  margin-top: 5%;
-  padding-bottom: 50px;
-  width: 30%;
+  font-size: 3.5vw;
+  border-top: 1px solid #ecd018;
+  border-bottom: 2px solid #ecd018;
+  width: 35%;
   text-align: center;
-  line-height: 0.8em;
-  padding-bottom: 25px;
+  font-weight: 200;
+  padding-bottom: 15px;
   font-family: "Montserrat", sans-serif;
-  color: #bc881f;
+  color: #111;
 }
 #skills #skills-blurb {
   text-align: center;
   width: 50%;
-  font-size: 2.5em;
-  margin: 1% 0% 3% 0%;
-  color: #9197a1;
+  font-size: 1.2vw;
+  padding-bottom: 20px;
+  margin: 1% 0%;
+  color: #555;
   font-weight: 200;
 }
 #skills #skills-group {
-  font-size: 2em;
   width: 60%;
   margin-bottom: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+#skills #skills-group .skills-container {
+  text-align: center;
+  padding: 0px 25px;
+}
 #skills #skills-group h2 {
   color: #111;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding-left: 10px;
-  letter-spacing: 0.01em;
-  text-align: center;
+  font-family: "Staatliches", cursive;
+  font-weight: 300;
+  font-size: 1.3vw;
+  border-bottom: 2px solid #ecd018;
+  padding: 0px 25px;
 }
 #skills #skills-group ul {
-  padding: 10px 0px 0px 40px;
-  font-size: 1em;
+  display: inline-block;
+  line-height: 1.8em;
+  font-size: 1vw;
   font-weight: 400;
-  color: #9197a1;
-}
-#skills #skills-group #front-end h2 {
-  border-left: #1ed510 5px solid;
-}
-#skills #skills-group #source-control h2 {
-  border-left: #0070dd 5px solid;
-}
-#skills #skills-group #uiux h2 {
-  border-left: #802dd4 5px solid;
-}
-#skills #skills-group #soft-skills h2 {
-  border-left: #e66210 5px solid;
+  color: #555;
+  list-style: none;
 }
 
 #projects {
-  background: #111;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 #projects h1 {
-  color: #fff;
-  font-size: 5rem;
-  margin: 10% 0% 2% 0%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #111;
+  font-size: 3vw;
+  margin: 5% 0% 2% 0%;
 }
 #projects #projects-bio {
-  color: #bc881f;
+  color: #ecd018;
   margin-bottom: 12%;
   font-size: 1.5rem;
   font-weight: 400;
 }
 #projects #projects-bio a:link {
-  color: #bc881f;
+  color: #ecd018;
 }
 #projects #projects-bio a:hover {
   color: #e66210;
@@ -187,14 +183,17 @@ body {
   position: relative;
   width: 30vw;
   height: 20vw;
-  margin: -8%;
-  border: 10px solid #fff;
-  background-color: #144587;
+  margin: -10%;
+  border: 10px solid #111;
+  min-height: 370px;
+  min-width: 600px;
+  background-color: #555;
   transition: 0.7s ease;
+  padding: 0.5%;
 }
 #projects .project-box h2 {
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.5vw;
   position: absolute;
   left: 1%;
   bottom: 1%;
@@ -240,7 +239,7 @@ body {
 }
 
 #footer {
-  color: #bc881f;
+  color: #111;
   font-size: 1rem;
   text-align: center;
   margin: -0.4% 0% 0.5% 0%;

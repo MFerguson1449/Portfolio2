@@ -1,5 +1,6 @@
 @import '_variables.scss';
 
+
 html {
    scroll-behavior: smooth;
 }
@@ -12,25 +13,45 @@ html {
 body { 
    background: #fff;
    font-size: 10px;
-   font-family: $font2;
+   font-family: $font3;
    font-weight: 400;
 }
 
-.content-box {
-   width: 99.2%;
-   margin: 0.8%;
+#header {
+   position: absolute;
+   top: 0%;
+   width: 100%;
+   background: $black;
+   padding: 5px;
+   text-align: center;
+   a:link, a:visited {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+      padding-right: 30px;
+      font-size: 2.3em;
+      font-family: $font1;
+   }
+   a:hover {
+      color: $accentOrange;
+   }
+   #info img {
+      padding-right: 8px;
+      position: relative;
+      top: 5px;
+   }
 }
 
 #landing {
-   height: 95vh;
-   background: $brandBlue;
+   padding-top: 150px;
+   padding-bottom: 100px;
    display: flex;
    justify-content: center;
    align-items: center;
-   color: #fff;
    #center {
    width: 60%;
    text-align: center;
+   transform: translateY(-10%);
    }
 
    #namebox {
@@ -41,133 +62,105 @@ body {
       padding-bottom: 20px;
       #name {
          width: 70%;
-         color: #f3f3f3;
+         color: $black;
          font-family: $font1;
-         font-size: 13em;
-         font-weight: 700;
+         font-size: 7vw;
+         font-weight: 300;
          line-height: 0.79em;
          text-align: left;
+         padding-left: 15px;
          #first {
             position: relative;
          }
       }
-      img {
-         height: 95%;
-         width: 19%;
+      #logo {
+         width: 13vw;
+         height: auto;
+         display: inline-block;
+         background: $black;
+         padding: 3.5% 1.5%;
       }
-
    }
    #personalBlurb {
       font-size: 1.5vw;
-      color: $brandYellow;
+      color: #555;
       -webkit-text-stroke: 0.2px #222;
-   }
-}
-
-#header {
-   a:link, a:visited {
-   color: #fff;
-   font-weight: 400;
-   text-decoration: none;
-   padding: 20px;
-   font-size: 2.8em;
-   }
-   a:hover {
-      color: $accentOrange;
-   }
-   #jumps {
-   position: absolute;
-   top: 5%;
-   left: 2%;
-   }
-   #info {
-      line-height: 4em;
-      position: absolute;
-      top: 5%;
-      right: 5%;
-      img {
-         padding-right: 8px;
-         position: relative;
-         top: 5px;
-      }
+      border-top: $black 6px solid;
+      padding-top: 20px;
+      font-weight: 100;
+      font-family: $font2;
    }
 }
 
 #skills {
-   height: 70vh;
+   padding-top: 100px;
    color: $black;
    font-weight: 600;
    display: flex;
+   background: rgb(250, 250, 250);
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background: #f1f1f1;
    #skills-header{
-      font-size: 6em;
-      margin-top: 5%;
-      padding-bottom: 50px;
-      width: 30%;
+      font-size: 3.5vw;
+      border-top: 1px solid $brandYellow;
+      border-bottom: 2px solid $brandYellow;
+      width: 35%;
       text-align: center;
-      line-height: 0.8em;
-      padding-bottom: 25px;
+      font-weight: 200;
+      padding-bottom: 15px;
       font-family: $font1;
-      color: $brandYellow;
-
+      color: $black;
    }
    #skills-blurb {
       text-align: center;
       width: 50%;
-      font-size: 2.5em;
-      margin: 1% 0% 3% 0%;
+      font-size: 1.2vw;
+      padding-bottom: 20px;
+      margin: 1% 0%;
       color: $grey;
       font-weight: 200;
    }
    #skills-group {
-      font-size: 2em;
       width: 60%;
       margin-bottom: 5%;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      .skills-container {
+         text-align: center;
+         padding: 0px 25px;
+      }
       h2 {
          color: $black;
-         font-family: $font1;
-         font-weight: 600;
-         padding-left: 10px;
-         letter-spacing: 0.01em;
-         text-align: center;
+         font-family: $font2;
+         font-weight: 300;
+         font-size: 1.3vw;
+         border-bottom: 2px solid $brandYellow;
+         padding: 0px 25px;
       }
       ul {
-         padding: 10px 0px 0px 40px;
-         font-size: 1em;
+         display: inline-block;
+         line-height: 1.8em;
+         font-size: 1vw;
          font-weight: 400;
          color: $grey;
-      }
-      #front-end h2{
-         border-left: $accentGreen 5px solid;
-      }
-      #source-control h2{
-         border-left: $accentBlue 5px solid;
-      }
-      #uiux h2{
-         border-left: $accentPurple 5px solid;
-      }
-      #soft-skills h2{
-         border-left: $accentOrange 5px solid
+         list-style: none;
       }
    }
 }
 
 #projects {
-   background: $black;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
    h1 {
-      color: #fff;
-      font-size: 5rem;
-      margin: 10% 0% 2% 0%;
+      font-family: $font1;
+      font-weight: 500;
+      color: $black;
+      font-size: 3vw;
+      margin: 5% 0% 2% 0%;
    }
    #projects-bio {
       color: $brandYellow;
@@ -192,14 +185,16 @@ body {
       position: relative;
       width: 30vw;
       height: 20vw;
-      margin: -8%;
-      border: 10px solid #fff;
-      background-color: $brandBlue;
-
+      margin: -10%;
+      border: 10px solid $black;
+      min-height: 370px;
+      min-width: 600px;
+      background-color: $grey;
       transition: .7s ease;
+      padding: 0.5%;
       h2 {
          color: white;
-         font-size: 1.8rem;
+         font-size: 1.5vw;
          position: absolute;
          left: 1%;
          bottom: 1%;
@@ -249,7 +244,7 @@ body {
 }
 
 #footer {
-   color: $brandYellow;
+   color: $black;
    font-size: 1rem;
    text-align: center;
    margin: -0.4% 0% 0.5% 0%;
