@@ -26,14 +26,19 @@ body {
    position: absolute;
    top: 0%;
    width: 100%;
-   background: $black;
+   background: #252527;
    padding: 5px;
    text-align: center;
+   border: 2px outset rgba(61, 61, 61, 0.7);
    a:link, a:visited {
+      display: inline-block;
+      border-right: 1px solid rgba(107, 107, 107, 0.7);
+      border-left: 1px solid rgba(99, 99, 99, 0.7);
       color: #fff;
       font-weight: 500;
       text-decoration: none;
-      padding-right: 30px;
+      margin: 0px -2px;
+      padding: 0px 30px;
       font-size: 2.3em;
       font-family: $font1;
    }
@@ -54,13 +59,13 @@ body {
    justify-content: center;
    align-items: center;
    #center {
-   width: 60%;
-   text-align: center;
-   transform: translateY(-10%);
+      width: 60%;
+      text-align: center;
+      transform: translateY(-10%);
    }
 
    #namebox {
-      height: 300px;
+      margin-top: 10%;
       display: flex;
       align-items: flex-end;
       justify-content: center;
@@ -74,9 +79,6 @@ body {
          line-height: 0.79em;
          text-align: left;
          padding-left: 15px;
-         #first {
-            position: relative;
-         }
       }
       #logo {
          width: 13vw;
@@ -263,4 +265,43 @@ body {
    font-size: 1rem;
    text-align: center;
    margin: -0.4% 0% 0.5% 0%;
+}
+
+
+@media only screen and (max-width: 600px) {
+   #header {
+      #info {
+         a:link, a:visited {
+            font-size: 3vw;
+            border-left: none;
+            border-right: none;
+            padding-bottom: 5px;
+            margin-top: 5px;
+            }
+         } 
+      }
+   }
+@media only screen and (max-width: 600px) {
+   #landing {
+      #center {
+         width: 80%;
+         #personalBlurb {
+            font-size: 2.5vw;
+            margin-bottom: -10%;
+         }
+         #namebox {
+            flex-flow: column nowrap;
+            align-items: center;
+            #name {
+               font-size: 8vw;
+               text-align: center;
+               font-weight: 500;
+               margin-top: 4%;
+            }
+            #logo {
+               width: 16vw;
+            }
+         }
+      }
+   }
 }

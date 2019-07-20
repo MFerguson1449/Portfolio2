@@ -19,15 +19,20 @@ body {
   position: absolute;
   top: 0%;
   width: 100%;
-  background: #111;
+  background: #252527;
   padding: 5px;
   text-align: center;
+  border: 2px outset rgba(61, 61, 61, 0.7);
 }
 #header a:link, #header a:visited {
+  display: inline-block;
+  border-right: 1px solid rgba(107, 107, 107, 0.7);
+  border-left: 1px solid rgba(99, 99, 99, 0.7);
   color: #fff;
   font-weight: 500;
   text-decoration: none;
-  padding-right: 30px;
+  margin: 0px -2px;
+  padding: 0px 30px;
   font-size: 2.3em;
   font-family: "Montserrat", sans-serif;
 }
@@ -53,7 +58,7 @@ body {
   transform: translateY(-10%);
 }
 #landing #namebox {
-  height: 300px;
+  margin-top: 10%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -68,9 +73,6 @@ body {
   line-height: 0.79em;
   text-align: left;
   padding-left: 15px;
-}
-#landing #namebox #name #first {
-  position: relative;
 }
 #landing #namebox #logo {
   width: 13vw;
@@ -257,6 +259,38 @@ body {
   font-size: 1rem;
   text-align: center;
   margin: -0.4% 0% 0.5% 0%;
+}
+
+@media only screen and (max-width: 600px) {
+  #header #info a:link, #header #info a:visited {
+    font-size: 3vw;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 5px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #landing #center {
+    width: 80%;
+  }
+  #landing #center #personalBlurb {
+    font-size: 2.5vw;
+    margin-bottom: -10%;
+  }
+  #landing #center #namebox {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  #landing #center #namebox #name {
+    font-size: 8vw;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 4%;
+  }
+  #landing #center #namebox #logo {
+    width: 16vw;
+  }
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */
