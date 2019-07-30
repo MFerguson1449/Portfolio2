@@ -31,13 +31,16 @@ body {
   color: #fff;
   font-weight: 500;
   text-decoration: none;
-  margin: 0px -2px;
-  padding: 0px 30px;
+  margin: 0px 2.4px;
+  padding: 0px 32px;
   font-size: 2.3em;
   font-family: "Montserrat", sans-serif;
+  transition: transform 0.3s;
+  background: #252527;
 }
 #header a:hover {
   color: #e66210;
+  transform: scale(1.02);
 }
 #header #info img {
   padding-right: 8px;
@@ -92,7 +95,7 @@ body {
 }
 
 #skills {
-  padding-top: 100px;
+  padding-top: 7%;
   color: #111;
   font-weight: 600;
   display: flex;
@@ -108,7 +111,7 @@ body {
   width: 35%;
   text-align: center;
   font-weight: 200;
-  padding-bottom: 15px;
+  padding-bottom: 0.4%;
   font-family: "Montserrat", sans-serif;
   color: #111;
 }
@@ -170,6 +173,8 @@ body {
   margin-bottom: 4%;
   font-size: 1.5rem;
   font-weight: 400;
+  width: 50%;
+  text-align: center;
 }
 #projects #projects-bio a:link {
   color: #111;
@@ -266,8 +271,8 @@ body {
     font-size: 3vw;
     border-left: none;
     border-right: none;
-    padding-bottom: 5px;
-    margin-top: 5px;
+    padding-bottom: 4px;
+    margin-top: 2px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -290,6 +295,22 @@ body {
   }
   #landing #center #namebox #logo {
     width: 16vw;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  #projects #projects-bio {
+    font-size: 2.1vw;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  #skills #skills-blurb {
+    font-size: 1.6vw;
+  }
+  #skills #skills-group h2 {
+    font-size: 2vw;
+  }
+  #skills #skills-group ul {
+    font-size: 1.3vw;
   }
 }
 
