@@ -32,8 +32,6 @@ body {
    border: 2px outset rgba(61, 61, 61, 0.7);
    a:link, a:visited {
       display: inline-block;
-      border-right: 1px solid rgba(107, 107, 107, 0.7);
-      border-left: 1px solid rgba(99, 99, 99, 0.7);
       color: #fff;
       font-weight: 500;
       text-decoration: none;
@@ -57,7 +55,7 @@ body {
 
 #landing {
    padding-top: 150px;
-   padding-bottom: 100px;
+   padding-bottom: 80px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -104,21 +102,40 @@ body {
 
 #skills {
    padding-top: 7%;
+   display: flex;
+   justify-content: center;
    color: $black;
    font-weight: 600;
    display: flex;
-   background: rgb(250, 250, 250);
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   .skills-icon {
+      height: auto;
+      width: 25%;
+      padding-bottom: 10%;
+   }
+   #design-graphic {
+      height: auto;
+      width: 50%;
+   }
+   #skills-top {
+      background: #ecd018;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 5% 0% 14% 0%;
+   }
    #skills-header{
       font-size: 3.5vw;
-      border-top: 1px solid $brandYellow;
-      border-bottom: 2px solid $brandYellow;
+      border-top: 1px solid $black;
+      border-bottom: 2px solid $black;
       width: 35%;
       text-align: center;
       font-weight: 200;
-      padding-bottom: 0.4%;
+      padding-bottom: 0.5%;
       font-family: $font1;
       color: $black;
    }
@@ -132,30 +149,38 @@ body {
       font-weight: 200;
    }
    #skills-group {
-      width: 60%;
-      margin-bottom: 5%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
+      width: 75%;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      background: #fafafa;
+      border-radius: 30px;
+      transform: translateY(-35%);
+      border: 1px solid #E6ECF8;
+      box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
       .skills-container {
          text-align: center;
          padding: 0px 25px;
+         border-right: 1px solid #E6ECF8;
+         height: 100%;
+         padding: 15% 0%;
       }
       h2 {
          color: $black;
          font-family: $font2;
          font-weight: 300;
          font-size: 1.3vw;
-         border-bottom: 2px solid $brandYellow;
-         padding: 0px 25px;
+         padding: 10px 25px;
       }
       ul {
          display: inline-block;
-         line-height: 1.8em;
+         line-height: 2em;
          font-size: 1vw;
          font-weight: 400;
          color: $grey;
          list-style: none;
+      }
+      #soft-skills {
+         border-right: none;
       }
    }
 }
@@ -214,6 +239,7 @@ body {
       transition: .7s ease;
       margin: 1%;
       box-shadow: 0 0 5px rgba(0,0,0,0.7);
+      border-radius: 20px;
       h2 {
          color: white;
          font-size: 1.5vw;
@@ -246,6 +272,7 @@ body {
       justify-content: space-evenly;
       align-items: center;
       text-align: center;
+      border-radius: 20px;
       .project-blurb {
          font-size: 1.2rem;
          font-weight: 800;
