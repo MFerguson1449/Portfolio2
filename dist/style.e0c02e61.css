@@ -11,7 +11,7 @@ html {
 body {
   background: #fff;
   font-size: 10px;
-  font-family: "Literata", serif;
+  font-family: "Staatliches", cursive;
   font-weight: 400;
 }
 
@@ -150,6 +150,7 @@ body {
   transform: translateY(-35%);
   border: 1px solid #E6ECF8;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  border: 1px solid #111;
 }
 #skills #skills-group .skills-container {
   text-align: center;
@@ -180,7 +181,9 @@ body {
 #projects {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
+  background: #fafafa;
 }
 #projects h1 {
   font-family: "Montserrat", sans-serif;
@@ -188,8 +191,6 @@ body {
   color: #111;
   font-size: 3vw;
   margin: 5% 0% 2% 0%;
-  border-top: 1px solid #ecd018;
-  border-bottom: 2px solid #ecd018;
   width: 30%;
   text-align: center;
 }
@@ -208,9 +209,8 @@ body {
   color: #e66210;
 }
 #projects #project-sort {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   width: 65%;
   height: auto;
   margin-bottom: 10%;
@@ -225,6 +225,11 @@ body {
   background-size: cover;
   background-position: center;
 }
+#projects #project-sort #wip {
+  background: url("/wip.9ad537d4.jpg");
+  background-size: cover;
+  background-position: center;
+}
 #projects .project-box {
   position: relative;
   display: inline-block;
@@ -234,22 +239,22 @@ body {
   min-width: 400px;
   background-color: #555;
   transition: 0.7s ease;
-  margin: 1%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   border-radius: 20px;
 }
 #projects .project-box h2 {
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   position: absolute;
-  left: 1%;
+  left: 3%;
   bottom: 1%;
   transition: ease 0.8s;
   z-index: 1;
+  font-family: "Literata", serif;
 }
 #projects .project-box img {
   height: 100%;
-  transform: translateX(25%);
+  transform: translateX(20%);
   z-index: -99;
 }
 #projects .project-overlay {
@@ -273,8 +278,8 @@ body {
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 #projects .project-overlay .project-blurb {
-  font-size: 1.2rem;
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 #projects .project-overlay .project-blurb p {
   transform: translateY(30%);

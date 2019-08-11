@@ -18,7 +18,7 @@ html {
 body { 
    background: #fff;
    font-size: 10px;
-   font-family: $font3;
+   font-family: $font2;
    font-weight: 400;
 }
 
@@ -157,6 +157,7 @@ body {
       transform: translateY(-35%);
       border: 1px solid #E6ECF8;
       box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+      border: 1px solid $black;
       .skills-container {
          text-align: center;
          padding: 0px 25px;
@@ -188,15 +189,15 @@ body {
 #projects {
    display: flex;
    align-items: center;
+   justify-content: center;
    flex-direction: column;
+   background: #fafafa;
    h1 {
       font-family: $font1;
       font-weight: 500;
       color: $black;
       font-size: 3vw;
       margin: 5% 0% 2% 0%;
-      border-top: 1px solid $brandYellow;
-      border-bottom: 2px solid $brandYellow;
       width: 30%;
       text-align: center;
    }
@@ -215,9 +216,8 @@ body {
       }
    }
    #project-sort {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       width: 65%;
       height: auto;
       margin-bottom: 10%;
@@ -226,6 +226,9 @@ body {
       }
       #kris-box {
          @include projectImage('../img/kslogo.jpg');
+      }
+      #wip {
+         @include projectImage('../img/wip.jpg');
       }
    }
    .project-box {
@@ -237,21 +240,21 @@ body {
       min-width: 400px;
       background-color: $grey;
       transition: .7s ease;
-      margin: 1%;
       box-shadow: 0 0 5px rgba(0,0,0,0.7);
       border-radius: 20px;
       h2 {
          color: white;
-         font-size: 1.5vw;
+         font-size: 1.2vw;
          position: absolute;
-         left: 1%;
+         left: 3%;
          bottom: 1%;
          transition: ease 0.8s;
          z-index: 1;
+         font-family: $font3;
       }
       img {
          height: 100%;
-         transform: translateX(25%);
+         transform: translateX(20%);
          z-index: -99;
       }
    }
@@ -275,8 +278,8 @@ body {
       border-radius: 20px;
       box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
       .project-blurb {
-         font-size: 1.2rem;
-         font-weight: 800;
+         font-size: 1.1rem;
+         font-weight: 400;
          p {
             transform: translateY(30%);
          }
