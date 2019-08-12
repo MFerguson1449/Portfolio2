@@ -209,10 +209,13 @@ body {
 }
 #projects #project-sort {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  width: 65%;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  width: 50%;
   height: auto;
   margin-bottom: 10%;
+  justify-items: center;
+  align-items: end;
+  grid-gap: 2%;
 }
 #projects #project-sort #murf-box {
   background: url("/murf-logo.eab5ebda.jpg");
@@ -232,7 +235,7 @@ body {
 #projects .project-box {
   position: relative;
   display: inline-block;
-  width: 40%;
+  width: 100%;
   height: auto;
   min-height: 300px;
   min-width: 400px;
