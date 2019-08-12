@@ -101,7 +101,6 @@ body {
 }
 
 #skills {
-   padding-top: 7%;
    display: flex;
    justify-content: center;
    color: $black;
@@ -191,13 +190,13 @@ body {
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   background: #fafafa;
+   background: white;
    h1 {
       font-family: $font1;
       font-weight: 500;
       color: $black;
       font-size: 3vw;
-      margin: 5% 0% 2% 0%;
+      margin: 0% 0% 2% 0%;
       width: 30%;
       text-align: center;
    }
@@ -268,7 +267,7 @@ body {
       width: 100%;
       opacity: 0;
       transition: .7s ease;
-      background: rgba(66, 66, 66, 0.7);
+      background: rgba(66, 66, 66, 0.95);
       color: #fff;
       display: flex;
       flex-flow: column nowrap;
